@@ -19,6 +19,8 @@ import waxpage.redit as redit
 
 DEF_ENCODING = "ISO-8859-1"
 
+IBAN_N_DIGITS = 34
+
 DEFAULT_LIBRE_PT_NIBS = "eea/tables/pt_NIBS.xlsx"
 SOURCE_IBAN_CC = "sources/iban-$$.txt"
 
@@ -27,6 +29,17 @@ SAMPLE_IBAN_DE_UNICEF = "IBAN DE57 3702 0500 0000 3000 00"
 NIB_NUM_CC = {
     "@default": 4,
     "pt": 4,
+    }
+
+DIGIT_CHECKS_CC = {
+    "pt": (0, 25-2, 25-2, 34),
+}
+
+CC_IBAN_FORMAT = {
+    "@format": "kk: IBAN check digit",
+    "pt": "PTkk bbbb ssss cccc cccc ccc.xx",
+    "de": "DEkk bbbb bbbb cccc cccc cc",
+    "es": "ESkk bbbb ssss xxcc cccc cccc",
     }
 
 
@@ -111,6 +124,7 @@ def samples(dump:bool=True) -> dict:
     cc_letter_list = (
         "pt",	# Portugal
         "de",	# Germany
+        "es",
         )
     urls = {
         "pt": {
@@ -123,26 +137,47 @@ def samples(dump:bool=True) -> dict:
             "unicef": (
                 "DE57 3702 0500 0000 3000 00",
                 "https://www.unicef.de/informieren/ueber-uns/faq/wie-lautet-die-vollstaendige-bankverbindung-mit-iban-und-bic-von-unicef-deutschland-/27870",
-            )
+                ),
+            "wiki": (
+                "DE91 1000 0000 0123 4567 89",
+                "https://en.wikipedia.org/wiki/International_Bank_Account_Number",
+                )
+            },
+        "es": {
+            "unicef": (
+                "ES69 2100 5731 77 0200004894",	# Caixabank
+                "https://www.unicef.es/colabora/como-donar",
+                ),
             },
         }
     result = {"ccs": cc_letter_list, "urls": urls}
     if not dump:
         return result
     for cc_letters in cc_letter_list:
-        print("=" * 20, cc_letters, "=" * 20)
-        for item, there in urls[cc_letters].items():
+        print("=" * 25, cc_letters, "=" * 25)
+        for item in sorted(urls[cc_letters], key=str.casefold):
+            there = urls[cc_letters][item]
             s_who = f"{item} @{cc_letters}"
-            print(":::", item, there)
             iban, where = there
             iban = iban.replace(" ", "")
-            #s_iban = iban[:25-2] + " " + iban[25:]
-            s_iban = iban
-            print(s_iban, s_who)
-            print(" " * 4, "URL reference:",
-                  where.split("//", maxsplit=1)[-1])
+            if cc_letters in DIGIT_CHECKS_CC:
+                as_a1, as_a2, as_a3, as_a4 = DIGIT_CHECKS_CC[cc_letters]
+                s_iban = iban[as_a1:as_a2] + "." + iban[as_a3:as_a4]
+            else:
+                s_iban = iban
+            gen_fmt = iban_format(cc_letters)
+            print(gen_fmt, f"(General format, length={len(gen_fmt)})")
+            print(iban)
             print("--")
+            print(s_iban, s_who,
+                  "\n   ", "URL reference:",
+                  where.split("//", maxsplit=1)[-1])
     return result
+
+def iban_format(cc_letters:str):
+    """ Returns the IBAN general format """
+    astr = CC_IBAN_FORMAT[cc_letters].replace(" ", "").replace(".", "")
+    return astr
 
 # Main script
 if __name__ == "__main__":

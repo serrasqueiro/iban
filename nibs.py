@@ -47,12 +47,14 @@ def main():
     """ Main script """
     main_test(sys.argv[1:])
 
-def main_test(args):
+def main_test(args) -> int:
     default_libre_nibs = DEFAULT_LIBRE_PT_NIBS
     if not args:
         param = [default_libre_nibs]
     else:
         param = args
+        if param[0].endswith((".xlsx",)):
+            return dump_extra_info(param[0], param[1:])
     assert param[0]
     for cc_letters in ("pt",):
         nibs = {
@@ -65,6 +67,7 @@ def main_test(args):
             print(f"# Written: {out_name}")
         else:
             print(f"# Did not write: {out_name}")
+    return 0
 
 def write_opt_out(cc_letters:str, out_name:str, nibs:dict) -> bool:
     num_dig = NIB_NUM_CC.get(cc_letters)
@@ -116,6 +119,50 @@ def dump_nibs(fname:str, sheet_name:str, nibs:dict) -> int:
         nibs[s_num] = s_text
         nibs[s_num] = s_text
     return 0
+
+def dump_extra_info(fname, sheets) -> int:
+    num_sheets = sheets
+    if not sheets:
+        num_sheets = [1]
+    for num in num_sheets:
+        table = dict()
+        is_ok = extra_info(fname, int(num), table)
+        if not is_ok:
+            print(f"Sheet#{num} from {fname}: no such sheet?")
+            continue
+        tups = table["items"]
+        for aline in tups:
+            skip = False
+            for column in aline:
+                if not column:
+                    skip = True
+                    break
+            if skip:
+                print(".")
+                continue
+            shown = redit.char_map.simpler_ascii(aline)
+            print(shown)
+    return 0
+
+def extra_info(fname:str, num_sheet, table:dict) -> bool:
+    wbk = openpyxl.load_workbook(fname)
+    libre = xcelent.Xcel(wbk)
+    assert num_sheet >= 1, f"num_sheet >= 1, but it was: {num_sheet}"
+    #print("Opening sheet:", fname, num_sheet)
+    idx_sheet = num_sheet-1
+    try:
+        sheet = libre.get_sheet(wbk.sheetnames[idx_sheet])
+    except IndexError:
+        sheet = None
+    if not sheet:
+        return False
+    rows = [row for row in sheet.rows]
+    cont = list()
+    for arow in rows:
+        these = [elem.value for elem in arow if elem]
+        cont.append(these)
+    table["items"] = cont
+    return True
 
 
 def samples(dump:bool=True) -> dict:

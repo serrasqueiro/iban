@@ -60,7 +60,7 @@ def main_test(args) -> int:
         nibs = {
             "0000": "(RESERVED)",
             }
-        dump_nibs(param[0], cc_letters, nibs, extras)
+        dump_nibs(param[0], cc_letters, nibs)
         out_name = SOURCE_IBAN_CC.replace("$$", cc_letters)
         is_ok = write_opt_out(cc_letters, out_name, nibs)
         if is_ok:
@@ -89,6 +89,7 @@ def write_opt_out(cc_letters:str, out_name:str, nibs:dict) -> bool:
 def dump_nibs(fname:str, sheet_name:str, nibs:dict) -> int:
     """ Input should be an OpenLibre xls(x) file """
     pattern = sorted(nibs)[0]	# e.g. '0000'
+    wbk = openpyxl.load_workbook(fname)
     #booklet = xcelent.dict_from_sheets(wbk)
     libre = xcelent.Xcel(wbk, "nibs")
     sheet = libre.get_sheet(sheet_name)
@@ -123,7 +124,7 @@ def dump_extra_info(fname, sheets) -> int:
     num_sheets = sheets
     if not sheets:
         num_sheets = [1]
-    for num in sheets:
+    for num in num_sheets:
         table = dict()
         is_ok = extra_info(fname, int(num), table)
         if not is_ok:

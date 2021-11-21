@@ -4,6 +4,11 @@ IBAN on SEPA:
 - git sources:
   + https://github.com/serrasqueiro/iban/
 
+## Quick How-To
+
+- `python3 nibs.py ./eea/tables/pt_NIBS.xlsx 2`
+  + it generates `iban-pt.json` json output.
+
 ## Sources
 
 - `sources/iban-pt.txt` - Portugal

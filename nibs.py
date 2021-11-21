@@ -13,6 +13,7 @@ Uses 'xcelent', openpyxl wrapper
 # pylint: disable=missing-function-docstring
 
 import sys
+import json
 import openpyxl
 import filing.xcelent as xcelent
 import waxpage.redit as redit
@@ -45,16 +46,17 @@ CC_IBAN_FORMAT = {
 
 def main():
     """ Main script """
-    main_test(sys.argv[1:])
+    main_test(sys.stdout, sys.stderr, sys.argv[1:])
 
-def main_test(args) -> int:
+def main_test(out, err, args) -> int:
+    assert out
     default_libre_nibs = DEFAULT_LIBRE_PT_NIBS
     if not args:
         param = [default_libre_nibs]
     else:
         param = args
         if param[0].endswith((".xlsx",)):
-            return dump_extra_info(param[0], param[1:])
+            return dump_extra_info(err, param[0], param[1:], "iban-pt.json")
     assert param[0]
     for cc_letters in ("pt",):
         nibs = {
@@ -120,7 +122,10 @@ def dump_nibs(fname:str, sheet_name:str, nibs:dict) -> int:
         nibs[s_num] = s_text
     return 0
 
-def dump_extra_info(fname, sheets) -> int:
+def dump_extra_info(err, fname, sheets, outname:str) -> int:
+    assert err
+    refs = {}
+    print("Reading:", fname)
     num_sheets = sheets
     if not sheets:
         num_sheets = [1]
@@ -140,8 +145,27 @@ def dump_extra_info(fname, sheets) -> int:
             if skip:
                 print(".")
                 continue
-            shown = redit.char_map.simpler_ascii(aline)
-            print(shown)
+            triplet = redit.char_map.simpler_ascii(aline)
+            bank, nib_ref, name = triplet
+            if bank in ("IBAN",):
+                err.write(f"# Header: {aline}\n")
+                continue
+            assert bank not in refs, f"Duplicate nib_ref: {triplet}"
+            refs[name] = (bank, nib_ref)
+    res = []
+    for key in sorted(refs):
+        pair1, pair2 = refs[key]
+        err.write(f"#	{pair1}.{pair2}: {key}\n")
+        item = {
+            "name": key,
+            "nib-ref": pair1,
+            "agent": pair2,	# Agente Financeiro (Banco de Portugal)
+        }
+        res.append(item)
+    astr = json.dumps(res, indent=2, sort_keys=True)
+    with open(outname, "w", encoding="ascii") as fdout:
+        fdout.write(astr + "\n")
+    print("Written:", outname)
     return 0
 
 def extra_info(fname:str, num_sheet, table:dict) -> bool:

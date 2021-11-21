@@ -1,0 +1,877 @@
+[
+  {
+    "agent": "0305",
+    "name": "321 CREDITO - INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0305"
+  },
+  {
+    "agent": "0170",
+    "name": "ABANCA CORPORACION BANCARIA, SA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0170"
+  },
+  {
+    "agent": "0005",
+    "name": "ABANCA SERVICIOS FINANCIEROS, E.F.C., S.A.- SUCURSAL EM PORTUGAL",
+    "nib-ref": "0005"
+  },
+  {
+    "agent": "0781",
+    "name": "AGENCIA DE GESTAO DA TESOURARIA E DA DIVIDA PUBLICA - IGCP, E.P.E.",
+    "nib-ref": "0781"
+  },
+  {
+    "agent": "8705",
+    "name": "ALTICE PAY, SA",
+    "nib-ref": "8705"
+  },
+  {
+    "agent": "0276",
+    "name": "BANCA FARMAFACTORING SPA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0276"
+  },
+  {
+    "agent": "0023",
+    "name": "BANCO ACTIVOBANK, SA",
+    "nib-ref": "0023"
+  },
+  {
+    "agent": "0189",
+    "name": "BANCO ATLANTICO EUROPA, SA",
+    "nib-ref": "0189"
+  },
+  {
+    "agent": "0008",
+    "name": "BANCO BAI EUROPA, SA",
+    "nib-ref": "0008"
+  },
+  {
+    "agent": "0079",
+    "name": "BANCO BIC PORTUGUES, SA",
+    "nib-ref": "0079"
+  },
+  {
+    "agent": "0019",
+    "name": "BANCO BILBAO VIZCAYA  ARGENTARIA, S.A. - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0019"
+  },
+  {
+    "agent": "0010",
+    "name": "BANCO BPI, SA",
+    "nib-ref": "0010"
+  },
+  {
+    "agent": "0033",
+    "name": "BANCO COMERCIAL PORTUGUES, SA",
+    "nib-ref": "0033"
+  },
+  {
+    "agent": "0916",
+    "name": "BANCO CREDIBOM, SA",
+    "nib-ref": "0916"
+  },
+  {
+    "agent": "0193",
+    "name": "BANCO CTT, SA",
+    "nib-ref": "0193"
+  },
+  {
+    "agent": "0061",
+    "name": "BANCO DE INVESTIMENTO GLOBAL, SA",
+    "nib-ref": "0061"
+  },
+  {
+    "agent": "0001",
+    "name": "BANCO DE PORTUGAL, EP",
+    "nib-ref": "0001"
+  },
+  {
+    "agent": "0022",
+    "name": "BANCO DO BRASIL AG - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0022"
+  },
+  {
+    "agent": "0086",
+    "name": "BANCO EFISA, SA",
+    "nib-ref": "0086"
+  },
+  {
+    "agent": "0048",
+    "name": "BANCO FINANTIA, SA",
+    "nib-ref": "0048"
+  },
+  {
+    "agent": "0014",
+    "name": "BANCO INVEST, SA",
+    "nib-ref": "0014"
+  },
+  {
+    "agent": "0235",
+    "name": "BANCO L.J. CARREGOSA, SA",
+    "nib-ref": "0235"
+  },
+  {
+    "agent": "0060",
+    "name": "BANCO MADESANT - SOCIEDADE UNIPESSOAL, SA",
+    "nib-ref": "0060"
+  },
+  {
+    "agent": "0064",
+    "name": "BANCO PORTUGUES DE GESTAO, SA",
+    "nib-ref": "0064"
+  },
+  {
+    "agent": "0246",
+    "name": "BANCO PRIMUS, SA",
+    "nib-ref": "0246"
+  },
+  {
+    "agent": "0275",
+    "name": "BANCO SABADELL, SA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0275"
+  },
+  {
+    "agent": "0073",
+    "name": "BANCO SANTANDER CONSUMER PORTUGAL, SA",
+    "nib-ref": "0073"
+  },
+  {
+    "agent": "0018",
+    "name": "BANCO SANTANDER TOTTA, SA",
+    "nib-ref": "0018"
+  },
+  {
+    "agent": "0266",
+    "name": "BANK OF CHINA (LUXEMBOURG), SA LISBON BRANCH - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0266"
+  },
+  {
+    "agent": "0269",
+    "name": "BANKINTER, SA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0269"
+  },
+  {
+    "agent": "0032",
+    "name": "BARCLAYS BANK IRELAND PLC - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0032"
+  },
+  {
+    "agent": "0800",
+    "name": "BBVA, INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0800"
+  },
+  {
+    "agent": "0065",
+    "name": "BEST - BANCO ELECTRONICO DE SERVICO TOTAL, SA",
+    "nib-ref": "0065"
+  },
+  {
+    "agent": "0063",
+    "name": "BISON BANK, S.A.",
+    "nib-ref": "0063"
+  },
+  {
+    "agent": "0172",
+    "name": "BMW BANK GMBH - SUCURSAL PORTUGUESA",
+    "nib-ref": "0172"
+  },
+  {
+    "agent": "0191",
+    "name": "BNI - BANCO DE NEGOCIOS INTERNACIONAL (EUROPA), SA",
+    "nib-ref": "0191"
+  },
+  {
+    "agent": "0034",
+    "name": "BNP PARIBAS",
+    "nib-ref": "0034"
+  },
+  {
+    "agent": "0238",
+    "name": "BNP PARIBAS LEASE GROUP, SA",
+    "nib-ref": "0238"
+  },
+  {
+    "agent": "0848",
+    "name": "BNP PARIBAS PERSONAL FINANCE, S.A. - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0848"
+  },
+  {
+    "agent": "0257",
+    "name": "BNP PARIBAS SECURITIES SERVICES - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0257"
+  },
+  {
+    "agent": "0025",
+    "name": "CAIXA - BANCO DE INVESTIMENTO, SA",
+    "nib-ref": "0025"
+  },
+  {
+    "agent": "9000",
+    "name": "CAIXA CENTRAL - CAIXA CENTRAL DE CREDITO AGRICOLA MUTUO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3450",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO BEIRA CENTRO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "2090",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO BEIRA DOURO E LAFOES, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1440",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA AREA METROPOLITANA DO PORTO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3400",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA BAIRRADA E AGUIEIRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5080",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA BATALHA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "4050",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA BEIRA BAIXA (SUL), CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "0097",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA CHAMUSCA, CRL",
+    "nib-ref": "0097"
+  },
+  {
+    "agent": "6320",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA COSTA AZUL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3220",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA COSTA VERDE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "4020",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA REGIAO DO FUNDAO E SABUGAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "4080",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA SERRA DA ESTRELA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "2190",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA TERRA QUENTE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "4110",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DA ZONA DO PINHAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3370",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DAS SERRAS DE ANSIAO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3310",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ALBERGARIA E SEVER, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "7010",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ALBUFEIRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6020",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ALCACER DO SAL E MONTEMOR-O-NOVO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5020",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ALCOBACA, CARTAXO, NAZARE, RIO MAIOR E SANTAREM, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5050",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ALENQUER, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6040",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ALJUSTREL E ALMODOVAR, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1020",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE AROUCA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5060",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ARRUDA DOS VINHOS, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5070",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE AZAMBUJA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "0098",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE BOMBARRAL, CRL",
+    "nib-ref": "0098"
+  },
+  {
+    "agent": "6110",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE BORBA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5120",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE CADAVAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5130",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE CALDAS DA RAINHA, OBIDOS E PENICHE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3020",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE CANTANHEDE E MIRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3030",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE COIMBRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5170",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE CORUCHE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6160",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ELVAS E CAMPO MAIOR, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5460",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ENTRE TEJO E SADO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6170",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE ESTREMOZ, MONFORTE E ARRONCHES, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5180",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE LEIRIA, CRL",
+    "nib-ref": "5180"
+  },
+  {
+    "agent": "5140",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE LOURES, SINTRA E LITORAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5190",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE LOURINHA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5200",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE MAFRA, CRL",
+    "nib-ref": "5200"
+  },
+  {
+    "agent": "6240",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE MORAVIS, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3090",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DE AZEMEIS E ESTARREJA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3210",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DO BAIRRO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3380",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE OLIVEIRA DO HOSPITAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1400",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE PAREDES, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5230",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE PERNES E ALCANHOES, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3110",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE POMBAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5240",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE PORTO DE MOS, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1460",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE POVOA DE VARZIM,VILA DO CONDE E ESPOSENDE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5270",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE SALVATERRA DE MAGOS, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "7120",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE SAO BARTOLOMEU DE MESSINES E SAO MARCOS DA SERRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6330",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE SAO TEOTONIO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "7130",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE SILVES, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5310",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE SOBRAL DE MONTE AGRACO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3470",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DE VIRIATO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1320",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE TERRAS DO SOUSA, AVE, BASTO E TAMEGA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5340",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE TORRES VEDRAS, CRL",
+    "nib-ref": "5340"
+  },
+  {
+    "agent": "2230",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE TRAS-OS-MONTES E ALTO DOURO, C.R.L.",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3340",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE VAGOS, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3160",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE VALE DE CAMBRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5360",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE VILA FRANCA DE XIRA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1290",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DE VILA VERDE E DE TERRAS DO BOURO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6440",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO ALENTEJO CENTRAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6100",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO ALENTEJO SUL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "7210",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO ALGARVE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1470",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO ALTO CAVADO E BASTO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "2040",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO ALTO DOURO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3010",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO BAIXO MONDEGO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3240",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO BAIXO VOUGA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "2140",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO DOURO E COA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6250",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO GUADIANA INTERIOR, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1280",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO MEDIO AVE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6150",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO NORDESTE ALENTEJANO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1420",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO NOROESTE, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "6430",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO NORTE ALENTEJANO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5430",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO RIBATEJO NORTE E TRAMAGAL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "5470",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO RIBATEJO SUL, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "7140",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO SOTAVENTO ALGARVIO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "3060",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO DAO E ALTO VOUGA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "1340",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO SOUSA E BAIXO TAMEGA, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "2160",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DO VALE DO TAVORA E DOURO, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "8050",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DOS ACORES, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "2260",
+    "name": "CAIXA DE CREDITO AGRICOLA MUTUO DOURO E SABOR, CRL",
+    "nib-ref": "0045"
+  },
+  {
+    "agent": "0059",
+    "name": "CAIXA ECONOMICA DA MISERICORDIA DE ANGRA DO HEROISMO, CAIXA ECONOMICA BANCARIA, SA",
+    "nib-ref": "0059"
+  },
+  {
+    "agent": "0057",
+    "name": "CAIXA ECONOMICA DO PORTO",
+    "nib-ref": "0057"
+  },
+  {
+    "agent": "0036",
+    "name": "CAIXA ECONOMICA MONTEPIO GERAL, CAIXA ECONOMICA BANCARIA, SA",
+    "nib-ref": "0036"
+  },
+  {
+    "agent": "0035",
+    "name": "CAIXA GERAL DE DEPOSITOS, SA",
+    "nib-ref": "0035"
+  },
+  {
+    "agent": 7630,
+    "name": "CAIXABANK ELECTRONIC MONEY, EDE, S.L.",
+    "nib-ref": "7630"
+  },
+  {
+    "agent": "5564",
+    "name": "CAIXABANK PAYMENTS & CONSUMER, EFC, EP, SA",
+    "nib-ref": 5564
+  },
+  {
+    "agent": "0277",
+    "name": "CAIXABANK,S.A.  - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0277"
+  },
+  {
+    "agent": "0274",
+    "name": "CECABANK, SA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0274"
+  },
+  {
+    "agent": "0169",
+    "name": "CITIBANK EUROPE PLC - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0169"
+  },
+  {
+    "agent": "0921",
+    "name": "COFIDIS",
+    "nib-ref": "0921"
+  },
+  {
+    "agent": "0771",
+    "name": "CREDIT AGRICOLE LEASING & FACTORING - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0771"
+  },
+  {
+    "agent": "0267",
+    "name": "CREDIT SUISSE (LUXEMBOURG), SA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0267"
+  },
+  {
+    "agent": "8115",
+    "name": "CTT - CORREIOS DE PORTUGAL, SA",
+    "nib-ref": "8115"
+  },
+  {
+    "agent": "7972",
+    "name": "CURRENCIES DIRECT SPAIN, EDE, S.L.",
+    "nib-ref": "7972"
+  },
+  {
+    "agent": "0259",
+    "name": "DE LAGE LANDEN INTERNATIONAL, B.V. - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0259"
+  },
+  {
+    "agent": "0043",
+    "name": "DEUTSCHE BANK AKTIENGESELLSCHAFT - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0043"
+  },
+  {
+    "agent": "8706",
+    "name": "EASYPAY - INSTITUICAO DE PAGAMENTO, LDA",
+    "nib-ref": "8706"
+  },
+  {
+    "agent": "0173",
+    "name": "EDMOND DE ROTHSCHILD EUROPE - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0173"
+  },
+  {
+    "agent": "0280",
+    "name": "EFG BANK (LUXEMBOURG) S.A. - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0280"
+  },
+  {
+    "agent": "8709",
+    "name": "EUPAGO - INSTITUICAO DE PAGAMENTO, LDA",
+    "nib-ref": "8709"
+  },
+  {
+    "agent": "0780",
+    "name": "FCA CAPITAL PORTUGAL, INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0780"
+  },
+  {
+    "agent": "0082",
+    "name": "FCE BANK PLC",
+    "nib-ref": "0082"
+  },
+  {
+    "agent": "0278",
+    "name": "GRENKE BANK AG - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0278"
+  },
+  {
+    "agent": "0047",
+    "name": "HAITONG BANK, SA",
+    "nib-ref": "0047"
+  },
+  {
+    "agent": "0270",
+    "name": "IBM DEUTSCHLAND KREDITBANK GMBH - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0270"
+  },
+  {
+    "agent": "8707",
+    "name": "IFTHENPAY, LDA",
+    "nib-ref": "8707"
+  },
+  {
+    "agent": "0500",
+    "name": "ING BANK NV - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0500"
+  },
+  {
+    "agent": "0195",
+    "name": "ITAU BBA EUROPE, S.A.",
+    "nib-ref": "0195"
+  },
+  {
+    "agent": "8987",
+    "name": "LUFTHANSA AIRPLUS SERVICEKARTEN GMBH - SUCURSAL EM PORTUGAL",
+    "nib-ref": "8987"
+  },
+  {
+    "agent": "8700",
+    "name": "LUSOPAY, INSTITUICAO DE PAGAMENTO, LDA",
+    "nib-ref": "8700"
+  },
+  {
+    "agent": "8708",
+    "name": "MAXPAY - INSTITUICAO DE PAGAMENTO, LDA",
+    "nib-ref": "8708"
+  },
+  {
+    "agent": "0796",
+    "name": "MONTEPIO CREDITO - INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0796"
+  },
+  {
+    "agent": "0076",
+    "name": "MONTEPIO INVESTIMENTO, SA",
+    "nib-ref": "0076"
+  },
+  {
+    "agent": "8863",
+    "name": "MONTY GLOBAL PAYMENTS, S.A.",
+    "nib-ref": "8863"
+  },
+  {
+    "agent": "0812",
+    "name": "NOVACAMBIOS - INSTITUICAO DE PAGAMENTO, SA",
+    "nib-ref": "0812"
+  },
+  {
+    "agent": "0160",
+    "name": "NOVO BANCO DOS ACORES, SA",
+    "nib-ref": "0160"
+  },
+  {
+    "agent": "0007",
+    "name": "NOVO BANCO, SA",
+    "nib-ref": "0007"
+  },
+  {
+    "agent": "0881",
+    "name": "ONEY BANK - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0881"
+  },
+  {
+    "agent": "0955",
+    "name": "OREY FINANCIAL - INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0955"
+  },
+  {
+    "agent": "8710",
+    "name": "PAYPAYUE - INSTITUICAO DE PAGAMENTO, UNIPESSOAL, LDA",
+    "nib-ref": "8710"
+  },
+  {
+    "agent": "8701",
+    "name": "PAYSHOP (PORTUGAL), SA",
+    "nib-ref": "8701"
+  },
+  {
+    "agent": "8711",
+    "name": "RAIZE - INSTITUICAO DE PAGAMENTOS, SA",
+    "nib-ref": "8711"
+  },
+  {
+    "agent": "0171",
+    "name": "RCI BANQUE - SUCURSAL PORTUGAL",
+    "nib-ref": "0171"
+  },
+  {
+    "agent": "0329",
+    "name": "REALTRANSFER - INSTITUICAO DE PAGAMENTOS, SA",
+    "nib-ref": "0329"
+  },
+  {
+    "agent": "7500",
+    "name": "SFS ? FINANCIAL SERVICES, IME, S.A.",
+    "nib-ref": "7500"
+  },
+  {
+    "agent": "8703",
+    "name": "SIBS PAGAMENTOS, SA",
+    "nib-ref": "8703"
+  },
+  {
+    "agent": "0314",
+    "name": "SOFID - SOCIEDADE PARA O FINANCIAMENTO DO DESENVOLVIMENTO, INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0314"
+  },
+  {
+    "agent": "0271",
+    "name": "TOYOTA KREDITBANK GMBH ? SUCURSAL EM PORTUGAL ",
+    "nib-ref": "0271"
+  },
+  {
+    "agent": "0824",
+    "name": "UNICAMBIO - INSTITUICAO DE PAGAMENTO, SA",
+    "nib-ref": "0824"
+  },
+  {
+    "agent": "0698",
+    "name": "UNICRE - INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "nib-ref": "0698"
+  },
+  {
+    "agent": "7837",
+    "name": "VIVA PAYMENT SERVICES SA",
+    "nib-ref": "7837"
+  },
+  {
+    "agent": "0264",
+    "name": "VOLKSWAGEN BANK GMBH - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0264"
+  },
+  {
+    "agent": "0272",
+    "name": "WIZINK BANK, SA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0272"
+  }
+]

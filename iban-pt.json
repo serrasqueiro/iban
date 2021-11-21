@@ -25,11 +25,6 @@
     "nib-ref": "8705"
   },
   {
-    "agent": "0276",
-    "name": "BANCA FARMAFACTORING SPA - SUCURSAL EM PORTUGAL",
-    "nib-ref": "0276"
-  },
-  {
     "agent": "0023",
     "name": "BANCO ACTIVOBANK, SA",
     "nib-ref": "0023"
@@ -163,6 +158,11 @@
     "agent": "0065",
     "name": "BEST - BANCO ELECTRONICO DE SERVICO TOTAL, SA",
     "nib-ref": "0065"
+  },
+  {
+    "agent": "0276",
+    "name": "BFF BANK SPA - SUCURSAL EM PORTUGAL",
+    "nib-ref": "0276"
   },
   {
     "agent": "0063",
@@ -630,16 +630,6 @@
     "nib-ref": "0035"
   },
   {
-    "agent": 7630,
-    "name": "CAIXABANK ELECTRONIC MONEY, EDE, S.L.",
-    "nib-ref": "7630"
-  },
-  {
-    "agent": "5564",
-    "name": "CAIXABANK PAYMENTS & CONSUMER, EFC, EP, SA",
-    "nib-ref": 5564
-  },
-  {
     "agent": "0277",
     "name": "CAIXABANK,S.A.  - SUCURSAL EM PORTUGAL",
     "nib-ref": "0277"
@@ -695,6 +685,11 @@
     "nib-ref": "8706"
   },
   {
+    "agent": "5826",
+    "name": "EBURY PARTNERS BELGIUM - SUCURSAL EM PORTUGAL",
+    "nib-ref": "5826"
+  },
+  {
     "agent": "0173",
     "name": "EDMOND DE ROTHSCHILD EUROPE - SUCURSAL EM PORTUGAL",
     "nib-ref": "0173"
@@ -718,6 +713,11 @@
     "agent": "0082",
     "name": "FCE BANK PLC",
     "nib-ref": "0082"
+  },
+  {
+    "agent": "5810",
+    "name": "FINANCI.RE DES PAIEMENTS ELECTRONIQUES SAS - SUCURSAL EM PORTUGAL",
+    "nib-ref": "5810"
   },
   {
     "agent": "0278",
@@ -830,11 +830,6 @@
     "nib-ref": "0329"
   },
   {
-    "agent": "7500",
-    "name": "SFS ? FINANCIAL SERVICES, IME, S.A.",
-    "nib-ref": "7500"
-  },
-  {
     "agent": "8703",
     "name": "SIBS PAGAMENTOS, SA",
     "nib-ref": "8703"
@@ -858,6 +853,11 @@
     "agent": "0698",
     "name": "UNICRE - INSTITUICAO FINANCEIRA DE CREDITO, SA",
     "nib-ref": "0698"
+  },
+  {
+    "agent": "7500",
+    "name": "UNIVERSO, IME, S.A.",
+    "nib-ref": "7500"
   },
   {
     "agent": "7837",

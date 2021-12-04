@@ -25,27 +25,40 @@ def main():
     if code is None:
         print(f"""Usage:
 
-{__file__} xlsx-file
+{__file__} [options] xlsx-file
 
 Use dot ('.') or {DEF_INPUT_XLSX}
 	-> place that file to check
 Checks whether iban-pt.json was correctly generated.
+
+Options:
+	-v	Verbose
 """)
     sys.exit(code if code else 0)
 
 
 def main_run(out, err, args, sheetname:str):
     assert out
+    verbose = 0
     if not args:
         return None
     param = args
+    if param[0] == "-v":
+        verbose += 1
+        del param[0]
+    if not param:
+        return None
     if len(param) > 1:
         return None
     in_file = param[0]
-    in_file = in_file if in_file != "." else eea/tables/listaiban.xlsx
-    astr = read_bp_lista_iban(in_file, sheetname)
+    in_file = in_file if in_file != "." else "eea/tables/listaiban.xlsx"
+    if verbose > 0:
+        print(f"Reading {in_file}, read_bp_lista_iban(), sheetname={sheetname}")
+    debug = verbose
+    astr = read_bp_lista_iban(in_file, sheetname, debug=debug)
     if astr:
         print("Uops:", astr)
+        err.write(str + "\n")
         return 1
     return 0
 

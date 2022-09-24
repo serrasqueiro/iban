@@ -9,7 +9,7 @@
 import sys
 import unidecode
 import openpyxl
-import filing.xcelent as xcelent
+import filing.xcelent
 
 DEF_ENCODING = "ISO-8859-1"
 DEF_INPUT_XLSX = "bptables/tables-pt/listaiban.xlsx"
@@ -61,7 +61,7 @@ def main_run(out, err, args):
 def output_texts(outname, cont:list):
     """ Output content to TSV file (text) output.
     """
-    enc = "utf-8"
+    #enc = "utf-8"
     enc = DEF_ENCODING
     with open(outname, "w", encoding=enc) as fdout:
         for idx, line in cont:
@@ -74,9 +74,10 @@ def output_texts(outname, cont:list):
 def read_listaiban(in_file, debug:int=0) -> tuple:
     """ Reads Libre xlsx file and returns message error.
     """
+    # pylint: disable=unnecessary-comprehension
     cont = []
     wbk = openpyxl.load_workbook(in_file)
-    libre = xcelent.Xcel(wbk)
+    libre = filing.xcelent.Xcel(wbk)
     sheet = libre.get_sheet(1)
     rows = [row for row in sheet.rows]
     idx = -1

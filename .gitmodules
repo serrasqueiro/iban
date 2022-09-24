@@ -1,3 +1,6 @@
 [submodule "eea"]
 	path = eea
 	url = git@github.com:serrasqueiro/eea.git
+[submodule "bptables"]
+	path = bptables
+	url = git@github.com:serrasqueiro/bptables.git

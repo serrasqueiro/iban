@@ -46,7 +46,7 @@
   },
   {
     "agent": "0019",
-    "name": "BANCO BILBAO VIZCAYA  ARGENTARIA, S.A. - SUCURSAL EM PORTUGAL",
+    "name": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A. - SUCURSAL EM PORTUGAL",
     "nib-ref": "0019"
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "agent": "0073",
-    "name": "BANCO SANTANDER CONSUMER PORTUGAL, SA",
+    "name": "SANTANDER CONSUMER FINANCE, S.A. - SUCURSAL EM PORTUGAL",
     "nib-ref": "0073"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "agent": "0266",
-    "name": "BANK OF CHINA (LUXEMBOURG), SA LISBON BRANCH - SUCURSAL EM PORTUGAL",
+    "name": "BANK OF CHINA (EUROPE), SA LISBON BRANCH - SUCURSAL EM PORTUGAL",
     "nib-ref": "0266"
   },
   {
@@ -631,7 +631,7 @@
   },
   {
     "agent": "0277",
-    "name": "CAIXABANK,S.A.  - SUCURSAL EM PORTUGAL",
+    "name": "CAIXABANK,S.A. - SUCURSAL EM PORTUGAL",
     "nib-ref": "0277"
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "agent": "0780",
-    "name": "FCA CAPITAL PORTUGAL, INSTITUICAO FINANCEIRA DE CREDITO, SA",
+    "name": "FCA BANK S.P.A. - SUCURSAL EM PORTUGAL",
     "nib-ref": "0780"
   },
   {
@@ -841,7 +841,7 @@
   },
   {
     "agent": "0271",
-    "name": "TOYOTA KREDITBANK GMBH ? SUCURSAL EM PORTUGAL ",
+    "name": "TOYOTA KREDITBANK GMBH ? SUCURSAL EM PORTUGAL",
     "nib-ref": "0271"
   },
   {
@@ -873,5 +873,20 @@
     "agent": "0272",
     "name": "WIZINK BANK, SA - SUCURSAL EM PORTUGAL",
     "nib-ref": "0272"
+  },
+  {
+    "agent": "5845",
+    "name": "UNIFIEDPOST PAYMENTS S.A. - SUCURSAL EM PORTUGAL",
+    "nib-ref": "5845"
+  },
+  {
+    "agent": "7501",
+    "name": "MARTRUST EUROPE, S.A.",
+    "nib-ref": "7501"
+  },
+  {
+    "agent": "",
+    "name": "",
+    "nib-ref": null
   }
 ]

@@ -16,7 +16,7 @@ import openpyxl
 import waxpage.redit as redit
 
 DEF_ENCODING = "ISO-8859-1"
-DEF_INPUT_XLSX = "eea/tables/listaiban.xlsx"
+DEF_INPUT_XLSX = "bptables/tables-pt/listaiban.xlsx"
 
 
 def main():
@@ -51,14 +51,14 @@ def main_run(out, err, args, sheetname:str):
     if len(param) > 1:
         return None
     in_file = param[0]
-    in_file = in_file if in_file != "." else "eea/tables/listaiban.xlsx"
+    in_file = in_file if in_file != "." else DEF_INPUT_XLSX
     if verbose > 0:
         print(f"Reading {in_file}, read_bp_lista_iban(), sheetname={sheetname}")
     debug = verbose
     astr = read_bp_lista_iban(in_file, sheetname, debug=debug)
     if astr:
-        print("Uops:", astr)
-        err.write(str + "\n")
+        print("Uops:", astr, end="\n\n")
+        err.write(astr + "\n")
         return 1
     return 0
 
@@ -72,7 +72,7 @@ def read_bp_lista_iban(in_file, sheetname, debug:int=0) -> str:
     in_encode = "utf-8"
     there = json.loads(open("iban-pt.json", "r", encoding=in_encode).read())
     bank_dict = from_iban(there)
-    #print("Debug: there:", there)
+    #print("Debug: there:", in_file + "\n\n====\n", there)
     wbk = openpyxl.load_workbook(in_file)
     rows = [[item.value for item in row] for row in wbk[sheetname]]
     idx = 0
@@ -89,12 +89,17 @@ def read_bp_lista_iban(in_file, sheetname, debug:int=0) -> str:
         iban_id = "{:04}".format(int(item[0]))
         print(f"# {idx}, iban_id={iban_id} item: {item}")
         _, agente, name, agent_type = item
+        name = simpler_name(name)
+        assert "\n\n" not in name
+        assert "  " not in name, name.replace(" ", "-")
+        assert name == name.strip(), name.replace(" ", "-")
         entry = {
             "iban-id": iban_id,
-            "name": name,
+            "name": name.replace("\n", " "),
             "agent": agente,
             "agent-type": agent_type,
         }
+        assert "  " not in entry["name"]
         res.append(entry)
     #for key, val in bank_dict["by-agent"].items(): print("##", key, val)
 
@@ -116,9 +121,13 @@ def read_bp_lista_iban(in_file, sheetname, debug:int=0) -> str:
         at_json = bank_dict["by-agent"].get(agente)
         if at_json:
             iban_id, name = at_json
-            assert entry["name"] == name, f"Mismatch 'name': {entry}"
+            s_msg = f"""Mismatch {iban_id} 'name':
+this '{entry['name']}'
+vs:  '{name}'"""
+            assert entry["name"] == name, s_msg
             #print("Ok:", entry, "//", at_json)
-            assert entry["iban-id"] == iban_id, f"Mismatch 'iban-id' and 'nib-ref' at json: {entry}"
+            s_msg = f"Mismatch 'iban-id'={iban_id} and 'nib-ref' at json: {entry}"
+            assert entry["iban-id"] == iban_id, s_msg
             hit_there[agente].append((entry["iban-id"], name))
         else:
             missing.append(entry)
@@ -142,6 +151,9 @@ def from_iban(alist:list) -> dict:
     }
     for item in alist:
         agent, name, nib_ref = item["agent"], item["name"], item["nib-ref"]
+        if not agent:
+            assert nib_ref is None
+            break
         assert agent not in ba_dict["by-agent"], f"Duplicate agent '{agent}', this one: {item}"
         ba_dict["by-agent"][agent] = (nib_ref, name)
         if nib_ref in ba_dict["by-nib-ref"]:
@@ -150,6 +162,13 @@ def from_iban(alist:list) -> dict:
             ba_dict["by-nib-ref"][nib_ref] = [(agent, name)]
     return ba_dict
 
+def simpler_name(name):
+    astr = name.rstrip()
+    while True:
+        new = astr.replace("  ", " ")
+        if new == astr:
+            return new
+        astr = new
 
 # Main script
 if __name__ == "__main__":
